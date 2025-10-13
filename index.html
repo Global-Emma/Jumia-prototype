@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <title>Jumia</title>
+</head>
+
+<body>
+  <!-- THE HEADER AND NAVBAR -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="menu">
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/bars.svg" alt="menu">
+        <div class="product-types-header">
+          <button>
+            Appliances</button>
+          <button>
+            Phones & Tablets</button>
+          <button>
+            Health & Beauty</button>
+          <button>
+            Home & Office</button>
+          <button>
+            Electronics</button>
+          <button>
+            Fashion</button>
+          <button>
+            Supermarket</button>
+          <button>
+            Computing</button>
+          <button>
+            Baby Products</button>
+          <button>
+            Gaming</button>
+          <button>
+            Musical Instruments
+          </button>
+          <button>
+            Other Categories
+          </button>
+        </div>
+      </div>
+      <a href="">
+        <img src="https://cdn.brandfetch.io/jumia.com/w/512/h/86/logo?c=1idk8KN1acSgJG8iGOF" alt="logo">
+      </a>
+      <div class="search-bar">
+        <input type="search" class="search-input" placeholder="🔍 Search products, brands and categories">
+        <button class="search-btn">Search</button>
+      </div>
+      <button class="user" onclick="
+        if(document.querySelector('.user-menu').style.display === 'block'){
+          document.querySelector('.user-menu').style.display = 'none'
+        } else{document.querySelector('.user-menu').style.display = 'block'}
+
+        document.querySelector('.help-menu').style.display = 'none'
+      ">
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/user-check.svg" alt="">
+        <p>Hi, Glory</p>
+        <img class="arrow" src="fontawesome-free-7.0.0-desktop/svgs-full/solid/angle-down.svg" alt="" height="15px">
+      </button>
+      <button class="help" onclick="
+        if(document.querySelector('.help-menu').style.display === 'block'){
+          document.querySelector('.help-menu').style.display = 'none'
+        } else{document.querySelector('.help-menu').style.display = 'block'}
+
+        document.querySelector('.user-menu').style.display = 'none'
+      ">
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/question-circle.svg" alt="">
+        <p>Help</p>
+        <img class="arrow" src="fontawesome-free-7.0.0-desktop/svgs-full/solid/angle-down.svg" alt="" height="15px">
+
+      </button>
+      <button class="cart" onclick="window.location.href = 'cart.html' ">
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/cart-shopping.svg" alt="">
+        <div class="cart-quantity-display"></div>
+        <p>Cart</p>
+      </button>
+
+    </nav>
+  </header>
+
+  <div class="user-menu">
+    <a href="#">
+      <button style="border-radius: 5px 5px 0px 0px;">
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/user.svg" alt="">
+        <p>My Account</p>
+      </button>
+    </a>
+    <a href="#">
+      <button>
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/box.svg" alt="">
+        <p>Orders</p>
+      </button>
+    </a>
+    <a href="#">
+      <button>
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/envelope.svg" alt="">
+        <p>Inbox</p>
+      </button>
+    </a>
+    <a href="#">
+      <button>
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/heart.svg" alt="">
+        <p>Wishlist</p>
+      </button>
+    </a>
+    <a href="#">
+      <button>
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/vr-cardboard.svg" alt="">
+        <p>Voucher</p>
+      </button>
+    </a>
+
+    <div class="logout">
+      <button>Logout</button>
+    </div>
+
+  </div>
+
+  <div class="help-menu">
+    <a href="#">
+      <button style="border-radius: 5px 5px 0px 0px;">Help Center</button>
+    </a>
+    <a href="#">
+      <button>Place an Order</button>
+    </a>
+    <a href="#">
+      <button>Payment Options</button>
+    </a>
+    <a href="#">
+      <button>Track an Order</button>
+    </a>
+    <a href="#">
+      <button>Cancel an Order</button>
+    </a>
+    <a href="#">
+      <button>Return and Refunds</button>
+    </a>
+
+    <div class="livechat">
+      <button>
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/message.svg" alt="" width="30px">
+        <p>Live Chat</p>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- THE PRODUCT TYPE SECTIONS -->
+  <section class="sections">
+    <div class="product-types">
+      <button class="appliances">
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/box.svg" alt="">
+        Appliances</button>
+      <button class="phones">
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/tablet-alt.svg" alt="">
+        Phones & Tablets</button>
+      <button class="health">
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/medkit.svg" alt="">
+        Health & Beauty</button>
+      <button class="home">
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/home-alt.svg" alt="">
+        Home & Office</button>
+      <button class="electronics">
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/radio.svg" alt="">
+        Electronics</button>
+      <button class="fashion">
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/shirt.svg" alt="">
+        Fashion</button>
+      <button class="supermarket">
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/apple-alt.svg" alt="">
+        Supermarket</button>
+      <button class="computing">
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/computer.svg" alt="">
+        Computing</button>
+      <button class="baby">
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/baby.svg" alt="">
+        Baby Products</button>
+      <button class="gaming">
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/gamepad.svg" alt="">
+        Gaming</button>
+      <button class="music">
+        Musical Instruments
+      </button>
+      <button class="others">
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/dice-four.svg" alt="">
+        Other Categories
+      </button>
+
+
+      <div class="hover-display">
+        <div class="hover-content">
+          
+        </div>
+      </div>
+    </div>
+    <!-- THE SWIPER SECTION TO DISPLAY THE ADS OF SOME COMPANY PRODUCTS -->
+
+    <div class="swiper-box">
+
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="https://ng.jumia.is/cms/0-1-weekly-cps/0-2025/0-1Advertising/August/Xiaomi/712x384.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://ng.jumia.is/cms/0-5-brand-festival/2025/Treasure-Hunt/2nd-Sept/12-4-712x384.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://ng.jumia.is/cms/0-5-brand-festival/2025/Generic-teasing-banner/Livenow/712X384_livenow.gif"
+              alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://ng.jumia.is/cms/0-5-brand-festival/2025/Brand_Days/Nivea_Sept_2/712x384-FS.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://ng.jumia.is/cms/0-1-initiatives/Jumia-delivery/update/712x384.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <!-- THE CONTACT SECTION -->
+    <div class="contact-force">
+      <div class="contact">
+        <a href="">
+          <div class="call">
+            <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/phone-square.svg" alt="">
+            <span>
+              CALL TO ORDER
+              <p>08034216705, 091...</p>
+            </span>
+          </div>
+        </a>
+
+        <a href="">
+          <div class="sell">
+            <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/shop.svg" alt="">
+            Sell on Jumia
+          </div>
+        </a>
+
+        <a href="">
+          <div class="send">
+            <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/shipping-fast.svg" alt="">
+            Send Your Packages
+          </div>
+        </a>
+      </div>
+
+      <div class="j-force">
+
+      </div>
+    </div>
+  </section>
+
+  <!-- THE BONUS BUTTONS/LINKS TO THE BONUS AND AWOOF PLANS E.T.C. -->
+
+  <section class="awoof">
+    <div class="awoof-box"></div>
+  </section>
+
+  <section class="flash-sales">
+    <div class="flash-timer">
+      <h1>Flash Sales</h1>
+      <h1>Time-left: 00h: 00m: 00s</h1>
+      <a href="#">
+        <button>See All <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/angle-right.svg" alt=""></button>
+      </a>
+    </div>
+    <div class="flash-products">
+
+    </div>
+    </div>
+  </section>
+
+  <section class="products-categories">
+
+  </section>
+
+  <section class="top-sellers">
+    <div class="top-head">
+      <h1>Top Sellers | Brand Festival Deals</h1>
+      <a href="#">
+        <button>See All <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/angle-right.svg" alt=""></button>
+      </a>
+    </div>
+    <div class="top-sellers-products">
+
+    </div>
+    </div>
+  </section>
+
+
+
+
+  <!--/////////////// THE SCRIPTS ///////////////-->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      direction: 'horizontal',
+      slidesPerView: 1,
+      autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+    });
+  </script>
+
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>

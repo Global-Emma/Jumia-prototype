@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <link href="product.css" rel="stylesheet">
+  <title>Product Page</title>
+</head>
+
+<body>
+
+  <div class="dim-overlay"></div>
+  <div class="added-to-cart-display">
+    Item Added To cart!
+  </div>
+
+  <header class="header">
+    <nav class="navbar">
+      <div class="menu" style="display: block;">
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/bars.svg" alt="menu" width="30px">
+        <div class="product-types-header">
+          <button>
+            Appliances</button>
+          <button>
+            Phones & Tablets</button>
+          <button>
+            Health & Beauty</button>
+          <button>
+            Home & Office</button>
+          <button>
+            Electronics</button>
+          <button>
+            Fashion</button>
+          <button>
+            Supermarket</button>
+          <button>
+            Computing</button>
+          <button>
+            Baby Products</button>
+          <button>
+            Gaming</button>
+          <button>
+            Musical Instruments
+          </button>
+          <button>
+            Other Categories
+          </button>
+
+          <div class="category-display"></div>
+        </div>
+      </div>
+      <a href="index.html">
+        <img src="https://cdn.brandfetch.io/jumia.com/w/512/h/86/logo?c=1idk8KN1acSgJG8iGOF" alt="logo">
+      </a>
+      <div class="search-bar">
+        <input type="search" class="search-input" placeholder="🔍 Search products, brands and categories">
+        <button class="search-btn">Search</button>
+      </div>
+      <button class="user" onclick="
+        if(document.querySelector('.user-menu').style.display === 'block'){
+          document.querySelector('.user-menu').style.display = 'none'
+        } else{document.querySelector('.user-menu').style.display = 'block'}
+
+        document.querySelector('.help-menu').style.display = 'none'
+      ">
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/user-check.svg" alt="">
+        <p>Hi, Glory</p>
+        <img class="arrow" src="fontawesome-free-7.0.0-desktop/svgs-full/solid/angle-down.svg" alt="" height="15px">
+      </button>
+      <button class="help" onclick="
+        if(document.querySelector('.help-menu').style.display === 'block'){
+          document.querySelector('.help-menu').style.display = 'none'
+        } else{document.querySelector('.help-menu').style.display = 'block'}
+
+        document.querySelector('.user-menu').style.display = 'none'
+      ">
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/question-circle.svg" alt="">
+        <p>Help</p>
+        <img class="arrow" src="fontawesome-free-7.0.0-desktop/svgs-full/solid/angle-down.svg" alt="" height="15px">
+
+      </button>
+      <button class="cart" onclick="window.location.href = 'cart.html' ">
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/cart-shopping.svg" alt="">
+        <div class="cart-quantity-display"></div>
+        <p>Cart</p>
+      </button>
+
+    </nav>
+  </header>
+
+  <div class="user-menu">
+    <a href="#">
+      <button style="border-radius: 5px 5px 0px 0px;">
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/user.svg" alt="">
+        <p>My Account</p>
+      </button>
+    </a>
+    <a href="#">
+      <button>
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/box.svg" alt="">
+        <p>Orders</p>
+      </button>
+    </a>
+    <a href="#">
+      <button>
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/envelope.svg" alt="">
+        <p>Inbox</p>
+      </button>
+    </a>
+    <a href="#">
+      <button>
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/heart.svg" alt="">
+        <p>Wishlist</p>
+      </button>
+    </a>
+    <a href="#">
+      <button>
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/vr-cardboard.svg" alt="">
+        <p>Voucher</p>
+      </button>
+    </a>
+
+    <div class="logout">
+      <button>Logout</button>
+    </div>
+
+  </div>
+
+  <div class="help-menu">
+    <a href="#">
+      <button style="border-radius: 5px 5px 0px 0px;">Help Center</button>
+    </a>
+    <a href="#">
+      <button>Place an Order</button>
+    </a>
+    <a href="#">
+      <button>Payment Options</button>
+    </a>
+    <a href="#">
+      <button>Track an Order</button>
+    </a>
+    <a href="#">
+      <button>Cancel an Order</button>
+    </a>
+    <a href="#">
+      <button>Return and Refunds</button>
+    </a>
+
+    <div class="livechat">
+      <button>
+        <img src="fontawesome-free-7.0.0-desktop/svgs-full/solid/message.svg" alt="" width="30px">
+        <p>Live Chat</p>
+      </button>
+    </div>
+  </div>
+
+  <section class="product-box">
+
+  </section>
+
+
+
+  <script src="product.js" type="module"></script>
+</body>
+
+</html>
